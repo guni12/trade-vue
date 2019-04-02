@@ -8,7 +8,7 @@ It is built on [Vue.js](https://cli.vuejs.org/), a fast growing, modern framewor
 
 This platform was created (together with [trade-socket](https://github.com/guni12/trade-socket) and [trade-express](https://github.com/guni12/trade-express)) as my final project at [Blekinge Tekniska Högskola](https://www.bth.se/eng/) for the course Ramverk2. The real-time application microserver keeps track of prices and assets for each member, and the backend application handles secure login services and some text content.
 
-**`package.json` shows a number of utilized plugins from node-modules.**
+### **`package.json`** shows a number of utilized plugins from node-modules.
 
 | Plugin | USED FOR |
 | ------ | ------ |
@@ -16,11 +16,11 @@ This platform was created (together with [trade-socket](https://github.com/guni1
 | socket.io | Enables real-time, bidirectional and event-based communication between the browser and the server. It provides auto-reconnection support together with secure connections in the precense of proxies, firewalls etc. |
 | vue-router | Supports vue framework with easy route and path handling. |
 
-**The `devDependencies` plugins contains testing modules.**
+### The **`devDependencies`** plugins contains testing modules.
 
 Vue has great automatic development support, where mistakes in codepatterns can be corrected on the fly. `selenium-webdriver` together with `mocha`creates foundation for local testing.
 
-# The Selenium suit is testing the following:
+### The Selenium suit is testing the following:
 
 1. Test if web-page title is correct.
 
