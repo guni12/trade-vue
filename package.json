@@ -1,0 +1,64 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frontend for project Ramverk2",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "node ./node_modules/rimraf/bin.js ./node_modules/.cache",
+    "build": "vue-cli-service build --modern --report",
+    "serve": "vue-cli-service serve --host localhost --port 8088",
+    "inspect": "vue-cli-service inspect",
+    "help": "npx vue-cli-service help",
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && rsync -av dist/* deploy@guni.me:/var/www/trade-vue.guni.me/html/",
+    "test": "node ./node_modules/mocha/bin/_mocha test/*.js",
+    "test3": "nyc --reporter=html --reporter=text mocha 'test/javascripts/**/*.js'",
+    "test2": "mocha test/*.js"
+  },
+  "author": "Gunvor Nilsson",
+  "license": "ISC",
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.2.3",
+    "socket.io": "^2.2.0",
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "http-server": "^0.11.1",
+    "mocha": "^6.0.2",
+    "rimraf": "^2.6.3",
+    "selenium-webdriver": "^3.6.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
