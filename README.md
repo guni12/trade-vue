@@ -12,7 +12,7 @@ This platform was created (together with [trade-socket](https://github.com/guni1
 
 | Plugin | USED FOR |
 | ------ | ------ |
-| @amcharts/amcharts4 | Version 4 used for this application is written in TypeScript. Some of their graphs were at trade-vue's creation-time (Mars 2019) not yet converted from v3 to 4, but most of them were. For coding three different syntaxes are provided: TypeScript / ES6, JavaScript, or JSON. The documentation helps with integration in chosen framework, besides great tutorials to get going. |
+| @amcharts/amcharts4 | Version 4 used for this application is written in TypeScript. Some of their graphs were, at trade-vue's creation-time (Mars 2019) not yet converted from v3 to 4, but most of them were. For coding, three different syntaxes are provided: TypeScript / ES6, JavaScript, or JSON. The documentation helps with integration in chosen framework, besides great tutorials to get going. |
 | socket.io | Enables real-time, bidirectional and event-based communication between the browser and the server. It provides auto-reconnection support together with secure connections in the precense of proxies, firewalls etc. |
 | vue-router | Supports vue framework with easy route and path handling. |
 
@@ -22,7 +22,7 @@ Vue has great automatic development support, where mistakes in codepatterns can 
 
 # The Selenium suit is testing the following:
 
-1. Test if wep-page title is correct.
+1. Test if web-page title is correct.
 
 2. Test link to 'Join' and see if path and H2 is correct.
 
